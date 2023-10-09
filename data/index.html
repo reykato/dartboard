@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>the best led control panel ever</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="data:,">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script> 
+    </head>
+    <body>
+        <div class="content">
+            <div class="card">
+                <h2 class="nogap">Voltage (V)</h2>
+                <h1 style="padding-top: 0; padding-bottom: 2rem" id="voltage">3.85</h1>
+
+                <h2>Light Switch</h2>
+                <p>
+                    <label class="switch">
+                        <input type="checkbox" class="button" id="button">
+                        <span class="switchspan round"></span>
+                    </label>
+                </p>
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="255" value="100" class="slider" id="myRange">
+                </div>
+            </div>
+            <div class="modes">
+                <h1>Modes</h1>
+                <button id="white">White</button><br>
+                <div id="huediv">
+                    <button id="hue">Hue</button>
+                    <input type="color" id="colorpicker" value="#ff00ff">
+                </div>
+                <br>
+                <button id="rainbow">Rainbow</button><br>
+                <button id="pulse">Pulse</button><br>
+            </div>
+        </div>
+    </body>
+</html>
